@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+        <title>Stick</title>
+        <link href="https://fonts.googleapis.com/css?family=Merienda+One" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="main.js" type="text/javascript">
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+    </script>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .main{
+            width: 90%;
+            height: 120%;
+            position: absolute;
+            background-color: aquamarine;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .man h3,h4{
+            text-align: center;
+        }
+        .man img{
+            margin: 40px 0px 0px 0px;
+            width: 120px;
+            height: 120px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            border-radius: 50%;
+        }
+        #Maneger:hover{
+            color:red;
+        }
+        p{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+   <div class="wrapper">            
+            <nav>
+                <div class="logo"><a href="index.html"><span>Y</span>ours <span>B</span>ank<br><p style="line-height: 0px;font-size: 14px;float: right">With you Always</p></a></div>
+                <ul>
+                    <li><a href="#fi">Services</a></li>
+                    <li><a href="#" target="">products</a></li>
+                    <li><a href="http://localhost:8080/projects/about.html">About us</a></li>
+                    <li><a href="#footer"> Contect</a></li>
+                    <li><a class="active" href="http://localhost:8080/projects/login.jsp">Log OUT</a></li>
+                </ul>
+            </nav>
+        </div>
+    <div class="main">
+        <div id="Maneger" class="man">
+            <a href="http://www.codechef.com/users/rjbabu1309"><img src="raja.jpg">
+            <h3>Raja Babu</h3>
+            <h4>Owner<h4></a>
+        </div>
+        <div id="HOD" class="man">
+            <img src="bg2.jpg">
+            <h3>Durgesh Vishwakarma</h3>
+            <h4>CEO</h4>
+        </div>
+        <div class="context">
+            <center><p><span>&nbsp;&nbsp;&nbsp; Yours Bank is a Only project based bank .  <br>Created by Raja Babu and Durgesh Vishwakarma.</span></p></center>
+        </div>
+    </div>
+</body>
+</html>

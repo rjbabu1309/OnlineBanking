@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yours Bank</title>
+	<style type="text/css">
+		body{
+			background-color: pink;
+			width: 100%;
+			height: 100%;
+		}
+		#main{
+			width: 80%;
+			height: 80%;
+			background-color:darkcyan;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+        .pd h2{text-align: center;border-bottom: 2px solid red;}
+        .pd{
+            width: 99.8%;
+            height: 200px;
+            border: 1px solid white;
+            margin-top: 20px;
+            background-color: antiquewhite;
+            border-radius: 50px;
+            
+        }
+        .unit{
+            display: inline-flex;
+        }
+        .sb{
+            position: relative;
+            left: 50%;
+            padding-top: 50px;
+        }
+        button{
+        	position: absolute;
+        }
+	</style>
+</head>
+<body>
+	
+	<div id="main">
+		<div id="box">
+		    <form action="http://localhost:8080/projects/openAC.jsp">
+                <div class="pd"><h2>Personal Details</h2>
+                <div class="unit">
+		            <label>Name</label>
+		            <input type="text" name="name" placeholder="Enter your name">
+		          </div>
+
+                <div class="unit">
+		            <lable>Fathers name</lable>
+		            <input type="text" name="fathername" placeholder="Enter your Father's name">
+                    </div>
+                                 
+                    <div>
+		            <lable>Aadhar Number</lable>
+		            <input type="text" name="aadhar" placeholder="Enter your mother's name">
+                    </div>
+
+                    <div class="unit">
+		            <label>Mobile number</label>
+		            <input type="text" name="mobile" placeholder="7800815829">
+		          </div>
+
+		          <div class="unit">
+		            <label>Date of Birth</label>
+		            <input type="text" name="dob" placeholder="YYYY-MM-DD">
+		          </div>
+
+		          <div class="unit">
+		            <label>Username</label>
+		            <input type="text" name="username" placeholder="Balence">
+		          </div>
+
+                    
+
+		          <div class="unit">
+		            <label>Password</label>
+		            <input type="text" name="password" placeholder="Balence">
+		          </div>
+               		<div class="unit">
+		            <label>Balance</label>
+		            <input type="text" name="balance" placeholder="Balence">
+		          </div>
+		          <div class="unit">
+		          <lable>Email</lable>
+		            <input type="text" name="email" placeholder="example@mail.com">
+              		</div>
+               <div class="unit">
+		            <label>Account Number</label>
+		            <input type="text" name="ac" placeholder="Account Number 34950000">
+		          </div>
+                </div>
+                <div class="pd"><h2>Address</h2>
+		            <lable>Address</lable>
+		            <input type="text" name="address" placeholder="Enter your address name">
+		            
+                </div>
+                <div class="sb">
+                    <input type="submit" value="submit">
+                </div>
+                <button onclick="self.close()">Close</button>
+		    </form>
+		</div>
+	</div>
+</body>
+</html>
